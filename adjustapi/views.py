@@ -15,7 +15,6 @@ from .serializers import DataSerializer
 class ApiViewSet(viewsets.ModelViewSet):
     queryset = Datamodel.objects.all()
     serializer_class = DataSerializer
-    # bypass creating a FilterSet by instead adding filterset_fields to view class
     filterset_class = DataFilter
     ordering_fields = '__all__'
 

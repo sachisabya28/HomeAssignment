@@ -5,8 +5,8 @@ class DataFilter(filters.FilterSet):
     class Meta:
         model = Datamodel
         fields = {
-        'date': ['gte', 'lte', 'range'],
-        'channel': ['exact'],
-        'country': ['exact'],
-        'os': ['exact'],
+            'date': ['gte', 'lte', 'range', 'exact', 'gt', 'lt'],
+            'channel': ['exact'],
+            'country': ['exact'],
+            'os': ['exact'],
     }

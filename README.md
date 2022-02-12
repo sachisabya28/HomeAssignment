@@ -3,14 +3,14 @@
 Assignment : https://gist.github.com/kotik-adjust/4883e33c439db6de582fd0986939045c
 ```
 ###### Setup the app ######
-## only run  for the first time else start the directly using 
+## Only run below step if initial setup is done, else start app the directly using below command.
 ```bash
 sh run.sh
 ```
 
 ```bash
-git clone 
-cd <root-folder>
+git clone https://github.com/sachisabya28/HomeAssignment.git
+cd adjust
 sh setup.sh
 sh run.sh
 ```

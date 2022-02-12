@@ -9,8 +9,8 @@ sh run.sh
 ```
 
 ```bash
-git clone 
-cd <root-folder>
+git clone https://github.com/sachisabya28/HomeAssignment.git
+cd adjust
 sh setup.sh
 sh run.sh
 ```

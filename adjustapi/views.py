@@ -20,7 +20,6 @@ class ApiViewSet(viewsets.ModelViewSet):
     ordering_fields = '__all__'
 
     def get_queryset(self):
-        # queryset = super().get_queryset()
         group_by = self.request.query_params.getlist('group_by')
         cpi = self.request.query_params.getlist('cpi')
         limit = self.request.query_params.getlist('limit')

@@ -8,6 +8,7 @@ from rest_framework import viewsets
 from rest_framework import status
 
 from .models import Datamodel
+from .filter import DataFilter
 from .serializers import DataSerializer
 
 
@@ -15,12 +16,7 @@ class ApiViewSet(viewsets.ModelViewSet):
     queryset = Datamodel.objects.all()
     serializer_class = DataSerializer
     # bypass creating a FilterSet by instead adding filterset_fields to view class
-    filterset_fields = {
-        'date': ['gte', 'lte', 'range'],
-        'channel': ['exact'],
-        'country': ['exact'],
-        'os': ['exact'],
-    }
+    filterset_class = DataFilter
     ordering_fields = '__all__'
 
     def get_queryset(self):

@@ -18,7 +18,7 @@ sh run.sh
 ###### Unitest ######
 
 ```bash
-cd ~/adjustapi/test
+cd ~/adjustapi/unittest
 python test_api.py
 ```
 
